@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
 class Home extends Component {
   constructor() {
@@ -8,12 +9,14 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
-        <h1>ola</h1>
-        <h2> falacomoigop</h2>
-      </div>
+      <>
+        <HomePageStyle />
+      </>
     );
   }
 }
+const HomePageStyle = styled.header`
+  position: relative;
+`;
 
 export default Home;

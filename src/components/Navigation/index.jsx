@@ -18,7 +18,7 @@ export class index extends Component {
         </div>
         <ul className="nav-items">
           <li className="nav-item">
-            <NavLink to="/home" activeClassName="active-class">Home</NavLink>
+            <NavLink exact to="/" activeClassName="active-class">Home</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/about" activeClassName="active-class">About</NavLink>
@@ -76,6 +76,11 @@ const NavigatorStyled = styled.div`
     flex-direction: column;
     width: 100%;
 
+    .active-class {
+      background-color: var(--primary-color-dark);
+      color: var(--light-primary)
+    }
+
     li {
       text-align: center;
       padding: .1rem 0;
@@ -89,11 +94,11 @@ const NavigatorStyled = styled.div`
         &:hover {
           cursor: pointer;
           background-color: var(--primary-color-dark);
-        };
-
+        }
+        &:active {
+          background-color: var(--primary-color-dark);
+        }
       };
-
-
     };
   };
 
