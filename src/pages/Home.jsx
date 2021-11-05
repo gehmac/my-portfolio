@@ -12,11 +12,15 @@ class Home extends Component {
     return (
       <>
         <HomePageStyle>
-          <TitleHome>
-            <h1>
-              welcome to my profile
-            </h1>
-          </TitleHome>
+          <ConstentTitle>
+            <Titleh1>
+              welcome to my portfolio
+            </Titleh1>
+            <Subtitle>
+              Seja bem vindo ao meu portifólio aqui tem alguns dos projetos que
+              desenvolvi ou estão em desenvolvimento
+            </Subtitle>
+          </ConstentTitle>
 
           <Videohome>
             <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
@@ -34,7 +38,7 @@ const HomePageStyle = styled.main`
   justify-content: center;
   `;
 
-const TitleHome = styled.div`
+const ConstentTitle = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -45,6 +49,21 @@ const TitleHome = styled.div`
   background-color: var(--background-dark-color-A);
   overflow: hidden;
   z-index: 2;
+`;
+
+const Titleh1 = styled.h1`
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+`;
+
+const Subtitle = styled.p`
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem ;
+  width: 75%; 
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const Videohome = styled.div`
