@@ -1,17 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import avatar from '../../img/avatar.jpg';
 // import PropTypes from 'prop-types';
 
-export class index extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
-
-  render() {
-    return (
+function Navigation() {
+  return (
+    <>
       <NavigatorStyled>
         <div className="avatar">
           <img src={avatar} alt="Profile" />
@@ -40,8 +35,8 @@ export class index extends Component {
           <p>@2021 My Portifolio</p>
         </footer>
       </NavigatorStyled>
-    );
-  }
+    </>
+  );
 }
 
 const NavigatorStyled = styled.div`
@@ -100,7 +95,9 @@ const NavigatorStyled = styled.div`
         }
       };
     };
+
   };
+
 
   footer {
    margin-bottom: 0.5rem;
@@ -111,4 +108,4 @@ const NavigatorStyled = styled.div`
   };
 `;
 
-export default index;
+export default Navigation;

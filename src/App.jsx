@@ -1,19 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import HeaderPage from './components/Header';
-import Particle from './components/Particle';
+import './styles/app.css';
+import Asidebar from './components/SideBar';
 
+// assaid
 function App() {
   return (
     <Router>
-      <div className="particle">
-        <Particle />
-      </div>
-      <HeaderPage />
+
+      <Asidebar />
       <Switch>
 
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
 
