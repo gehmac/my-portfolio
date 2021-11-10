@@ -68,14 +68,14 @@ const Subtitle = styled.p`
 
 const Videohome = styled.div`
   position: absolute;
-  /* width: 100vw; */
-  height: 100%;
-`;
+  width: auto;
+  height: auto; 
+  `;
 
 const VideoBg = styled.video`
   width: 100%;
-  height: 100%;
+  height: 150vh;
   object-fit: cover;
-`;
+  `;
 
 export default Home;
